@@ -1,0 +1,285 @@
+Prefix(:=<http://www.semanticweb.org/ferhat/ontologies/2022/0/untitled-ontology-10#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://www.semanticweb.org/ferhat/ontologies/2022/0/untitled-ontology-10>
+
+Declaration(Class(:Acacia))
+Declaration(Class(:Alder))
+Declaration(Class(:Apple))
+Declaration(Class(:AshTree))
+Declaration(Class(:Aspen))
+Declaration(Class(:Beech))
+Declaration(Class(:Birch))
+Declaration(Class(:Cedar))
+Declaration(Class(:Chesnut))
+Declaration(Class(:Dogrose))
+Declaration(Class(:Hawton))
+Declaration(Class(:Leaf))
+Declaration(Class(:Linden))
+Declaration(Class(:Maple))
+Declaration(Class(:MultiLeaf))
+Declaration(Class(:NormalShaped))
+Declaration(Class(:Oak))
+Declaration(Class(:Pine))
+Declaration(Class(:Poplar))
+Declaration(Class(:RedMaple))
+Declaration(Class(:Rowanberry))
+Declaration(Class(:SingleLeaf))
+Declaration(Class(:StarShaped))
+Declaration(Class(:Thick))
+Declaration(Class(:Thin))
+Declaration(Class(:Viburnum))
+Declaration(Class(:Willow))
+Declaration(ObjectProperty(:LeafCount))
+Declaration(ObjectProperty(:WithFruit))
+Declaration(ObjectProperty(:biggerLeaves))
+Declaration(ObjectProperty(:hasBodyColor))
+Declaration(ObjectProperty(:moreLeaves))
+Declaration(ObjectProperty(:multiBodyCount))
+Declaration(ObjectProperty(:op1))
+Declaration(ObjectProperty(:op2))
+Declaration(ObjectProperty(:op3))
+Declaration(ObjectProperty(:op4))
+Declaration(DataProperty(:MaxSize))
+Declaration(NamedIndividual(:darkColoredBody))
+Declaration(NamedIndividual(:false))
+Declaration(NamedIndividual(:lightColoredBody))
+Declaration(NamedIndividual(:true))
+Declaration(AnnotationProperty(<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled>))
+
+
+
+
+############################
+#   Classes
+############################
+
+# Class: :Acacia (:Acacia)
+
+SubClassOf(:Acacia :Thick)
+SubClassOf(:Acacia ObjectHasValue(:WithFruit :false))
+SubClassOf(:Acacia ObjectHasValue(:hasBodyColor :lightColoredBody))
+SubClassOf(:Acacia ObjectMinCardinality(2 :LeafCount))
+SubClassOf(:Acacia ObjectExactCardinality(1 :multiBodyCount))
+
+# Class: :Alder (:Alder)
+
+SubClassOf(:Alder :NormalShaped)
+SubClassOf(:Alder ObjectHasValue(:WithFruit :false))
+SubClassOf(:Alder ObjectHasValue(:hasBodyColor :lightColoredBody))
+SubClassOf(:Alder ObjectExactCardinality(1 :LeafCount))
+SubClassOf(:Alder ObjectExactCardinality(1 :multiBodyCount))
+
+# Class: :Apple (:Apple)
+
+SubClassOf(:Apple :NormalShaped)
+SubClassOf(:Apple ObjectHasValue(:WithFruit :true))
+SubClassOf(:Apple ObjectHasValue(:hasBodyColor :darkColoredBody))
+SubClassOf(:Apple ObjectExactCardinality(1 :LeafCount))
+SubClassOf(:Apple ObjectExactCardinality(1 :multiBodyCount))
+
+# Class: :AshTree (:AshTree)
+
+SubClassOf(:AshTree :Thick)
+SubClassOf(:AshTree ObjectHasValue(:WithFruit :false))
+SubClassOf(:AshTree ObjectHasValue(:hasBodyColor :darkColoredBody))
+SubClassOf(:AshTree ObjectMinCardinality(2 :multiBodyCount))
+SubClassOf(:AshTree ObjectExactCardinality(1 :multiBodyCount))
+
+# Class: :Aspen (:Aspen)
+
+SubClassOf(:Aspen :NormalShaped)
+SubClassOf(:Aspen ObjectHasValue(:WithFruit :false))
+SubClassOf(:Aspen ObjectHasValue(:hasBodyColor :lightColoredBody))
+SubClassOf(:Aspen ObjectMinCardinality(1 :multiBodyCount))
+SubClassOf(:Aspen ObjectExactCardinality(1 :LeafCount))
+
+# Class: :Beech (:Beech)
+
+SubClassOf(:Beech :NormalShaped)
+SubClassOf(:Beech ObjectHasValue(:WithFruit :false))
+SubClassOf(:Beech ObjectHasValue(:hasBodyColor :lightColoredBody))
+SubClassOf(:Beech ObjectExactCardinality(1 :LeafCount))
+SubClassOf(:Beech ObjectExactCardinality(1 :multiBodyCount))
+
+# Class: :Birch (:Birch)
+
+SubClassOf(:Birch :NormalShaped)
+SubClassOf(:Birch ObjectHasValue(:WithFruit :false))
+SubClassOf(:Birch ObjectHasValue(:hasBodyColor :lightColoredBody))
+SubClassOf(:Birch ObjectExactCardinality(1 :LeafCount))
+SubClassOf(:Birch ObjectExactCardinality(1 :multiBodyCount))
+
+# Class: :Cedar (:Cedar)
+
+SubClassOf(:Cedar :Thin)
+SubClassOf(:Cedar ObjectHasValue(:WithFruit :false))
+SubClassOf(:Cedar ObjectHasValue(:hasBodyColor :darkColoredBody))
+SubClassOf(:Cedar ObjectMinCardinality(2 :LeafCount))
+SubClassOf(:Cedar ObjectExactCardinality(1 :multiBodyCount))
+
+# Class: :Chesnut (:Chesnut)
+
+SubClassOf(:Chesnut :StarShaped)
+SubClassOf(:Chesnut ObjectHasValue(:WithFruit :true))
+SubClassOf(:Chesnut ObjectHasValue(:hasBodyColor :darkColoredBody))
+SubClassOf(:Chesnut ObjectExactCardinality(1 :LeafCount))
+SubClassOf(:Chesnut ObjectExactCardinality(1 :multiBodyCount))
+
+# Class: :Dogrose (:Dogrose)
+
+SubClassOf(:Dogrose :Thick)
+SubClassOf(:Dogrose ObjectHasValue(:WithFruit :true))
+SubClassOf(:Dogrose ObjectHasValue(:hasBodyColor :darkColoredBody))
+SubClassOf(:Dogrose ObjectMinCardinality(2 :LeafCount))
+SubClassOf(:Dogrose ObjectExactCardinality(1 :multiBodyCount))
+
+# Class: :Hawton (:Hawton)
+
+SubClassOf(:Hawton :NormalShaped)
+SubClassOf(:Hawton ObjectHasValue(:WithFruit :false))
+SubClassOf(:Hawton ObjectHasValue(:hasBodyColor :lightColoredBody))
+SubClassOf(:Hawton ObjectExactCardinality(1 :LeafCount))
+SubClassOf(:Hawton ObjectExactCardinality(1 :multiBodyCount))
+
+# Class: :Linden (:Linden)
+
+SubClassOf(:Linden :NormalShaped)
+SubClassOf(:Linden ObjectHasValue(:WithFruit :false))
+SubClassOf(:Linden ObjectHasValue(:hasBodyColor :darkColoredBody))
+SubClassOf(:Linden ObjectExactCardinality(1 :LeafCount))
+SubClassOf(:Linden ObjectExactCardinality(1 :multiBodyCount))
+
+# Class: :Maple (:Maple)
+
+SubClassOf(:Maple :StarShaped)
+SubClassOf(:Maple ObjectHasValue(:WithFruit :false))
+SubClassOf(:Maple ObjectHasValue(:hasBodyColor :darkColoredBody))
+SubClassOf(:Maple ObjectExactCardinality(1 :LeafCount))
+SubClassOf(:Maple ObjectExactCardinality(1 :multiBodyCount))
+
+# Class: :MultiLeaf (:MultiLeaf)
+
+SubClassOf(:MultiLeaf :Leaf)
+SubClassOf(:MultiLeaf ObjectHasSelf(:op1))
+
+# Class: :NormalShaped (:NormalShaped)
+
+SubClassOf(:NormalShaped :SingleLeaf)
+
+# Class: :Oak (:Oak)
+
+SubClassOf(:Oak :NormalShaped)
+SubClassOf(:Oak ObjectHasValue(:WithFruit :false))
+SubClassOf(:Oak ObjectHasValue(:hasBodyColor :lightColoredBody))
+SubClassOf(:Oak ObjectExactCardinality(1 :LeafCount))
+SubClassOf(:Oak ObjectExactCardinality(1 :multiBodyCount))
+
+# Class: :Pine (:Pine)
+
+SubClassOf(:Pine :Thin)
+SubClassOf(:Pine ObjectHasValue(:WithFruit :false))
+SubClassOf(:Pine ObjectHasValue(:hasBodyColor :darkColoredBody))
+SubClassOf(:Pine ObjectMinCardinality(2 :LeafCount))
+SubClassOf(:Pine ObjectExactCardinality(1 :multiBodyCount))
+
+# Class: :Poplar (:Poplar)
+
+SubClassOf(:Poplar :NormalShaped)
+SubClassOf(:Poplar ObjectHasValue(:WithFruit :false))
+SubClassOf(:Poplar ObjectHasValue(:hasBodyColor :lightColoredBody))
+SubClassOf(:Poplar ObjectMinCardinality(1 :multiBodyCount))
+SubClassOf(:Poplar ObjectExactCardinality(1 :LeafCount))
+
+# Class: :RedMaple (:RedMaple)
+
+SubClassOf(:RedMaple :StarShaped)
+SubClassOf(:RedMaple ObjectHasValue(:WithFruit :false))
+SubClassOf(:RedMaple ObjectHasValue(:hasBodyColor :lightColoredBody))
+SubClassOf(:RedMaple ObjectExactCardinality(1 :LeafCount))
+SubClassOf(:RedMaple ObjectExactCardinality(1 :multiBodyCount))
+
+# Class: :Rowanberry (:Rowanberry)
+
+SubClassOf(:Rowanberry :Thick)
+SubClassOf(:Rowanberry ObjectHasValue(:WithFruit :true))
+SubClassOf(:Rowanberry ObjectHasValue(:hasBodyColor :lightColoredBody))
+SubClassOf(:Rowanberry ObjectMinCardinality(2 :LeafCount))
+SubClassOf(:Rowanberry ObjectMinCardinality(2 :multiBodyCount))
+
+# Class: :SingleLeaf (:SingleLeaf)
+
+SubClassOf(:SingleLeaf :Leaf)
+SubClassOf(:SingleLeaf ObjectHasSelf(:op2))
+
+# Class: :StarShaped (:StarShaped)
+
+SubClassOf(:StarShaped :SingleLeaf)
+
+# Class: :Thick (:Thick)
+
+SubClassOf(:Thick :MultiLeaf)
+
+# Class: :Thin (:Thin)
+
+SubClassOf(:Thin :MultiLeaf)
+
+# Class: :Viburnum (:Viburnum)
+
+SubClassOf(:Viburnum :StarShaped)
+SubClassOf(:Viburnum ObjectHasValue(:WithFruit :false))
+SubClassOf(:Viburnum ObjectHasValue(:hasBodyColor :lightColoredBody))
+SubClassOf(:Viburnum ObjectExactCardinality(1 :LeafCount))
+SubClassOf(:Viburnum ObjectExactCardinality(1 :multiBodyCount))
+
+# Class: :Willow (:Willow)
+
+SubClassOf(:Willow :NormalShaped)
+SubClassOf(:Willow ObjectHasValue(:WithFruit :false))
+SubClassOf(:Willow ObjectHasValue(:hasBodyColor :darkColoredBody))
+SubClassOf(:Willow ObjectExactCardinality(1 :LeafCount))
+SubClassOf(:Willow ObjectExactCardinality(1 :multiBodyCount))
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: :darkColoredBody (:darkColoredBody)
+
+ClassAssertion(:Apple :darkColoredBody)
+ClassAssertion(:AshTree :darkColoredBody)
+ClassAssertion(:Cedar :darkColoredBody)
+ClassAssertion(:Chesnut :darkColoredBody)
+ClassAssertion(:Dogrose :darkColoredBody)
+ClassAssertion(:Linden :darkColoredBody)
+ClassAssertion(:Maple :darkColoredBody)
+ClassAssertion(:Pine :darkColoredBody)
+ClassAssertion(:Willow :darkColoredBody)
+
+# Individual: :lightColoredBody (:lightColoredBody)
+
+ClassAssertion(:Acacia :lightColoredBody)
+ClassAssertion(:Alder :lightColoredBody)
+ClassAssertion(:Aspen :lightColoredBody)
+ClassAssertion(:Beech :lightColoredBody)
+ClassAssertion(:Birch :lightColoredBody)
+ClassAssertion(:Hawton :lightColoredBody)
+ClassAssertion(:Oak :lightColoredBody)
+ClassAssertion(:Poplar :lightColoredBody)
+ClassAssertion(:RedMaple :lightColoredBody)
+ClassAssertion(:Rowanberry :lightColoredBody)
+ClassAssertion(:Viburnum :lightColoredBody)
+DataPropertyAssertion(:MaxSize :lightColoredBody "8"^^xsd:integer)
+
+
+SubObjectPropertyOf(ObjectPropertyChain(:op1 owl:topObjectProperty :op2) :moreLeaves)
+SubObjectPropertyOf(ObjectPropertyChain(:op3 owl:topObjectProperty :op4) :biggerLeaves)
+DLSafeRule(Annotation(<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean) Annotation(rdfs:comment ""^^xsd:string) Annotation(rdfs:label "S1"^^xsd:string) Body(ClassAtom(:MultiLeaf Variable(:x)) ClassAtom(:SingleLeaf Variable(:y)))Head(ObjectPropertyAtom(:moreLeaves Variable(:x) Variable(:y))))
+DLSafeRule(Annotation(<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean) Annotation(rdfs:comment ""^^xsd:string) Annotation(rdfs:label "S2"^^xsd:string) Body(ClassAtom(:NormalShaped Variable(:x)) ClassAtom(:StarShaped Variable(:y)))Head(ObjectPropertyAtom(:biggerLeaves Variable(:x) Variable(:y))))
+)
